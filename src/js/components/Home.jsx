@@ -1,12 +1,14 @@
-import Navbar from "Navbar.jsx";
-import Jumbotron from "Jumbotron.jsx";
-import Card from "Card.jsx";
-import Footer from "Footer.jsx";
+// IMPORTS de subcomponentes locales (usar rutas relativas con ./)
+import Navbar from "./Navbar.jsx";
+import Jumbotron from "./Jumbotron.jsx";
+import Card from "./Card.jsx";
+import Footer from "./Footer.jsx";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+
       <main className="container py-5">
         <Jumbotron
           title="Construye cosas hermosas con React"
@@ -25,7 +27,26 @@ export default function Home() {
               btnLink="#"
             />
           </div>
+
           <div className="col-12 col-md-6 col-lg-3">
+            <Card
+              title="Plan Pro"
+              text="Para proyectos más grandes"
+              img="https://picsum.photos/300/201"
+              btnText="Saber más"
+              btnLink="#"
+            />
+          </div>
+		  <div className="col-12 col-md-6 col-lg-3">
+            <Card
+              title="Plan Pro"
+              text="Para proyectos más grandes"
+              img="https://picsum.photos/300/201"
+              btnText="Saber más"
+              btnLink="#"
+            />
+          </div>
+		  <div className="col-12 col-md-6 col-lg-3">
             <Card
               title="Plan Pro"
               text="Para proyectos más grandes"
@@ -36,6 +57,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+
       <Footer />
     </>
   );
