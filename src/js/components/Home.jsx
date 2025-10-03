@@ -1,28 +1,42 @@
-import React from "react";
+import Navbar from "Navbar.jsx";
+import Jumbotron from "Jumbotron.jsx";
+import Card from "Card.jsx";
+import Footer from "Footer.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <main className="container py-5">
+        <Jumbotron
+          title="Construye cosas hermosas con React"
+          subtitle="Landing page con componentes funcionales"
+          ctaText="Comenzar ahora"
+          ctaLink="#cards"
+        />
 
-//create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-            
-
-			<h1 className="text-center mt-5">hola</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
-
-export default Home;
+        <section id="cards" className="row g-4">
+          <div className="col-12 col-md-6 col-lg-3">
+            <Card
+              title="Plan Starter"
+              text="Perfecto para comenzar"
+              img="https://picsum.photos/300/200"
+              btnText="Empezar"
+              btnLink="#"
+            />
+          </div>
+          <div className="col-12 col-md-6 col-lg-3">
+            <Card
+              title="Plan Pro"
+              text="Para proyectos más grandes"
+              img="https://picsum.photos/300/201"
+              btnText="Saber más"
+              btnLink="#"
+            />
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
