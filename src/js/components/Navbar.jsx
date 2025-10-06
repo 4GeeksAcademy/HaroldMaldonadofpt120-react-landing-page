@@ -1,8 +1,8 @@
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <a className="navbar-brand" href="#">MiMarca</a>
+        <a className="navbar-brand" href="#">World Travel: Tu Agencia de Viajes Virtual</a>
         <button
           className="navbar-toggler"
           type="button"
