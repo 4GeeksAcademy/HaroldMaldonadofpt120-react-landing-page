@@ -2,7 +2,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <a className="navbar-brand" href="#">World Travel: Tu Agencia de Viajes Virtual</a>
+        <a className="navbar-brand" href="#"><i class="fa-solid fa-earth-americas"></i>World Travel: Tu Agencia de Viajes Virtual</a>
         <button
           className="navbar-toggler"
           type="button"
