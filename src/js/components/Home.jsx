@@ -42,7 +42,7 @@ export default function Home() {
               title="Viaja a Australia"
               text="Belleza natural y vida salvaje, y diseños urbanos"
               img="https://images.pexels.com/photos/2108232/pexels-photo-2108232.jpeg"
-              btnText="Saber más"
+              btnText="Mas Información"
               btnLink="#"
             />
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
               title="Viaja a Marruecos"
               text="Cultura, historia y paisajes impresionantes"
               img="https://images.pexels.com/photos/34170233/pexels-photo-34170233.jpeg"
-              btnText="Saber más"
+              btnText="¡en Oferta Ahora!"
               btnLink="#"
             />
           </div>
